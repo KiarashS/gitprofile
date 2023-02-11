@@ -15,6 +15,11 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
 
   const renderSkeleton = () => {
     let array = [];
+    
+    if (github.limit === 0) {
+      return array;
+    }
+    
     for (let index = 0; index < github.limit; index++) {
       array.push(
         <div className="card shadow-lg compact bg-base-100" key={index}>
@@ -64,6 +69,10 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
   };
 
   const renderProjects = () => {
+    if (github.limit === 0) {
+      return;
+    }
+    
     return repo.map((item, index) => (
       <a
         className="card shadow-lg compact bg-base-100 cursor-pointer"
