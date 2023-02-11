@@ -175,7 +175,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
               </div>
             </div>
           </div>
-        </div>)}
+        </div>) : (<></>)}
     </Fragment>
   );
 };
