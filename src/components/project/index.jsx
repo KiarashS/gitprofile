@@ -8,14 +8,13 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
   if (!loading && Array.isArray(repo) && repo.length === 0) {
     return <></>;
   }
+  
+  if (github.limit === 0) {
+    return <></>;
+  }
 
   const renderSkeleton = () => {
     let array = [];
-    
-    if (github.limit === 0) {
-      return array;
-    }
-        
     for (let index = 0; index < github.limit; index++) {
       array.push(
         <div className="card shadow-lg compact bg-base-100" key={index}>
