@@ -204,7 +204,7 @@ const config = {
   github: {
     username: 'arifszn', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
-    limit: 8, // How many projects to display.
+    limit: 8, // How many projects to display. Set limit: 0 to hide GitHub Projects
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
