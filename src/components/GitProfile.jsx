@@ -73,7 +73,7 @@ const GitProfile = ({ config }) => {
       .then((userData) => {
         let excludeRepo = ``;
       
-        if (sanitizedConfig.github.limit <= 0) {
+        if (sanitizedConfig.github.limit === 0) {
           setRepo([]);
           return;
         }
