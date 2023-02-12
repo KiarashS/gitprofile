@@ -73,10 +73,10 @@ const GitProfile = ({ config }) => {
       .then((userData) => {
         let excludeRepo = ``;
       
-        if (sanitizedConfig.github.limit === 0) {
+        /*if (sanitizedConfig.github.limit === 0) {
           setRepo([]);
           return;
-        }
+        }*/
         
         if (userData.public_repos === 0) {
           setRepo([]);
@@ -203,12 +203,12 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
-                      <Project
+                      {sanitizedConfig.github.limit ? (<Project
                         repo={repo}
                         loading={loading}
                         github={sanitizedConfig.github}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
-                      />
+                      />) : (<div></div>) }
                       <ExternalProject
                         loading={loading}
                         externalProjects={sanitizedConfig.externalProjects}
