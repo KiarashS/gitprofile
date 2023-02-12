@@ -2,7 +2,7 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'KiarashS', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 0, // How many projects to display.
     exclude: {
