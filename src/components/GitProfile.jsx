@@ -203,7 +203,7 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
-                      {sanitizedConfig.github.limit ? (<Project
+                      {sanitizedConfig.github.limit > 0 ? (<Project
                         repo={repo}
                         loading={loading}
                         github={sanitizedConfig.github}
