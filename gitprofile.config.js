@@ -13,13 +13,17 @@ const config = {
   social: {
     linkedin: 'ariful-alam',
     twitter: 'arif_szn',
+    mastodon: 'arifszn@mastodon.social',
     facebook: '',
     instagram: '',
+    youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
     medium: 'arifszn',
     dev: 'arifszn',
-    stackoverflow: '', // format: userid/username
+    stackoverflow: '', // example: '1/jeff-atwood'
+    skype: '',
+    telegram: '',
     website: 'https://arifszn.com',
     phone: '',
     email: 'arifulalamszn@gmail.com',
@@ -115,7 +119,7 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'winter',
+    defaultTheme: 'wireframe',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
